@@ -1,3 +1,4 @@
 # Pemrograman-Web-A
 
-## [Menuju link](Type Writing Skiils/readme.md)
+## [1. Type Writing Skiils](Type_Writing_Skiils/readme.md)
+

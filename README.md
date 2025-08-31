@@ -5,5 +5,5 @@ Herdian Tri Wardhana<br>
 
 ### __Pemrograman Web A__
 
-## [1. Type Writing Skiils]("/Type%20Writing%20Skiils"/readme.md)
+## [1. Type Writing Skiils]("Type%22Writing%22Skiils"/readme.md)
 

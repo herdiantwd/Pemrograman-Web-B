@@ -1,7 +1,7 @@
 # 🌐 Hubungan Skill Type Writing pada Programmer
 
 Programmer dalam pekerjaanya selalu terikat dengan *debugging code* yang tak henti-henti. Ini membuat Skill Mengetik kita sangat diperlukan untuk mengefisiensi waktu yang kita habiskan. Bayangkan jika memiliki skill 
-mengetik yang masih awam banget, ini membuat repot diakhir *coding* karena saat dijalankan masih banyak yang harus dibenahi ulang secara berulang. Mungkin untuk diri saya pribadi hal ini masih belum sangat terasa,
+mengetik yang masih awam banget, ini membuat repot diakhir *coding* karena saat dijalankan masih banyak yang harus dibenahi secara berulang. Mungkin untuk diri saya pribadi hal ini masih belum sangat terasa,
 karena saya masih dalam tahap belajar dan *coding* yang saya lakukan ini masih bersifat *basic*. 
 
 Untuk keahlian saya sendiri dalam mengetik, rasanya seperti masih awam banget karena dalam mengetik saya bertipe kata yang saya ketik itu tidak spontan terketik dengan saya melihat kata itu sendiri, 

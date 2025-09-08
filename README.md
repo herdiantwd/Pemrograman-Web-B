@@ -7,7 +7,7 @@ Herdian Tri Wardhana<br>
 
 <h3>  
   
-[1. Type Writing Skiils](/Type_Wrtiting_Skiils)
+[1. Type Writing Skiils](/Type%20Wrtiting%20Skiils)
   
 [2. HTML Basic Training](/HTML-Training)
 

@@ -11,6 +11,6 @@ Herdian Tri Wardhana<br>
   
 [2. HTML Basic Training](/HTML-Training)
 
-[3. Form, Table, Frame Web Practice](/Form,_Table,_Frame_Web_Practice)
+[3. Form, Table, Frame Web Practice](/Form,%20Table,%20Frame%20Web%20Practice)
 
 </h3>

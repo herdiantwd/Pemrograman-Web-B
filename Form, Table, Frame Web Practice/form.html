@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            background-color: #c9edbf;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .main h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display:block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border:blue;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2 color="black">Form Registrasi</h2>
+        <form action="" method="post">
+
+            <label class="label">Full Name:
+                <input type="text" id= "Nama Lengkap" name="nama" required>
+            </label>
+
+            <label class="label">Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label class="label">Password:
+                <input type="password" name="password" required>
+            </label>
+
+            <label class="label">Re-type Password:
+                <input type="password" name="password" required>
+            </label>
+
+            <label class="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label class="label">Gender:
+                <select name="jenis_kelamin" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+
+</html>

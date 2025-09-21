@@ -1,7 +1,7 @@
 # Basic CSS
 
 Pada pertemuan ke-4 kali ini, saya berlatih dalam memahami _basic_ dari CSS (Cascading Style Sheets) dengan membuat laman web _local_ sederhana yang memuat CSS dari 
-file eksternal. Disini saya membuat dengan mengikuti referensi dari [situs berikut](https://fajarbaskoro.blogspot.com/2025/09/latihan-css-course-web-programming.html)
+file eksternal. 
 
 Hasil dokumentasi:
 

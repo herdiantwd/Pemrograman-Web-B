@@ -1,0 +1,57 @@
+body{
+    background: #A8BBA3;
+    color: #B87C4C;
+}
+
+body h1,h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+body p{
+    text-align: center;
+}
+
+
+.isibox{
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 220px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      background-color: #B87C4C;
+}
+
+.card-title{
+    background-color: #009688;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card:nth-child(1) .card-title { background-color: #2196f3; } /* HTML */
+.card:nth-child(2) .card-title { background-color: #3f51b5; } /* CSS */
+.card:nth-child(3) .card-title { background-color: #009688; } /* PHP */
+.card:nth-child(4) .card-title { background-color: #ff9800; } /* JAVA */
+
+.card-body{
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+.card-body p{
+    text-align: justify;
+}
+

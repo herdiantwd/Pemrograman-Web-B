@@ -11,9 +11,20 @@ Pada pertemuan kali ini, saya berlatih dalam mengkombinasikan javascript dengan 
 
 Source Code : [SOURCE](no1.html)
 
+<br>
+
 > 2
 
+<br>
+
 > 3 Membuat List Dropdown Dinamis
+
+<img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/6904239a-a56c-41bf-b4fc-764f6e631783" />
+
+<img width="1919" height="1017" alt="image" src="https://github.com/user-attachments/assets/a7545f31-b808-4381-86d7-a53d3ae5f309" />
+
+Source Code : [SOURCE](no3.html)
+
 
 
 

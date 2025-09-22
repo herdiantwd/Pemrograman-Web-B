@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Dropdown Dinamis</title>
+
+        <h2>Dynamic Drop Down List</h2>
+    </head>
+
+    <body>
+        <label>
+            <select name="produk" id="produk" onchange="updateMerek()">
+                <option value="">---Pilih Jenis---</option>
+                <option value="handphone">Handphone</option>
+                <option value="laptop">Laptop</option>
+            </select>
+        </label>
+
+        <label>
+            <select name="merk" id="merk">
+                <option value="">---Pilih Merk---</option>
+
+            </select>
+        </label>
+
+        <script>
+            function updateMerek() {
+            const produk = document.getElementById("produk").value;
+            const merekSelect = document.getElementById("merk");
+
+            
+            merekSelect.innerHTML = '<option value="">---Pilih Merk---</option>';
+
+            let merekList = [];
+
+            if (produk === "handphone") {
+                merekList = ['Realme','Xiaomi','Iphone','Samsung'];
+            } else if (produk === "laptop") {
+                merekList = ['MSI','Acer','Lenovo','Asus','Axioo']
+            }
+
+            
+            merekList.forEach(merek => {
+                const option = document.createElement("option");
+                option.value = merek.toLowerCase();
+                option.textContent = merek;
+                merekSelect.appendChild(option);
+            });
+            }
+        </script>
+
+    </body>
+</html>

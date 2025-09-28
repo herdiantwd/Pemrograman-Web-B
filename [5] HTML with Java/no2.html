@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <title>Kode Pos Indonesia</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: lightgray;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            .top-header{
+                background-color: orange;
+                color: black;
+                padding: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: Arial, sans-serif;
+            }
+
+            select {
+                margin-bottom: 15px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            .boxinput{
+                margin: 0;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+            }
+
+            .formpos{
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                width: 1000px;
+            }
+
+            .stage-form{
+                margin-bottom: 15px;
+            }
+
+            .box-form{
+                display:block;
+                margin-bottom: 5px;
+                color: #555;
+                font-weight: bold;
+            }
+
+            .cari-button{
+                padding: 10px 20px;
+                background-color: #5cb85c;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .stage-result{
+                margin-top: 30px;
+                border-top: 1px solid #e0e0e0;
+                padding-top: 20px;
+            }
+            
+            .result-box {
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                padding: 15px;
+                margin-top: 20px;
+                background-color: lightgreen;
+            }
+            .result-header {
+                font-weight: bold;
+                margin-bottom: 8px;
+                font-size: 16px;
+                color: #333;
+            }
+            .result-body {
+                font-size: 14px;
+                color: #555;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="top-header">Pos Indonesia</div>
+
+        <br><br>
+
+        <div class="formpos">
+            <form action="" method="post">
+                <p>Cari kode pos yang tersedia</p>
+                
+                <div class="stage-form">
+                    <label class="box-form"> Provinsi : </label>
+                    <select name="provinsi" id="provinsi">
+                        <option value="">Pilih Provinsi Anda</option>
+                        <option value="jabar">Jawa Barat</option>
+                        <option value="jateng">Jawa Tengah</option>
+                        <option value="jatim">Jawa Timur</option>
+                    </select>
+                </div>
+
+                <div class="stage-form">
+                    <label class="box-form"> Kota/Kabupaten :</label>   
+                    <select name="kotakab" id="kotakab">
+                        <option value="">Pilih Kota/Kabupaten Anda</option>
+                    </select>
+                </div>
+
+                <div class="stage-form">
+                    <label class="box-form">Masukkan Kata Kunci Pencarian</label>
+                    <input type="text" id="cari" class="boxinput" placeholder="ex. 60111">
+                    <button class="cari-button" id="caributton">Cari</button>
+                </div>
+            </form>
+
+            <div id="hasil" class="stage-result"></div>
+        </div>
+
+        <script>
+            const dataWilayah = {
+                jabar: ["Bandung", "Bekasi", "Bogor"],
+                jateng: ["Semarang", "Solo", "Magelang"],
+                jatim: ["Surabaya", "Malang", "Sidoarjo"]
+            };
+
+            const dataKodePos = [
+                { kodePos: '60111', kelurahan: 'Keputih', kecamatan: 'Sukolilo', kota: 'Surabaya', provinsi: 'jatim' },
+                { kodePos: '65115', kelurahan: 'Lowokwaru', kecamatan: 'Lowokwaru', kota: 'Malang', provinsi: 'jatim' },
+                { kodePos: '50139', kelurahan: 'Tlogosari', kecamatan: 'Pedurungan', kota: 'Semarang', provinsi: 'jateng' },
+                { kodePos: '40115', kelurahan: 'Cihapit', kecamatan: 'Bandung Wetan', kota: 'Bandung', provinsi: 'jabar' }
+            ];
+
+            const provinsiSelect = document.getElementById("provinsi");
+            const kotaSelect = document.getElementById("kotakab");
+            const cariInput = document.getElementById("cari");
+            const cariButton = document.getElementById("caributton");
+            const hasilDiv = document.getElementById("hasil");
+
+            provinsiSelect.addEventListener("change", function () {
+                const prov = provinsiSelect.value;
+                kotaSelect.innerHTML = '<option value="">Pilih Kota/Kabupaten Anda</option>'; // reset dulu
+
+                if (dataWilayah[prov]) {
+                    dataWilayah[prov].forEach(kota => {
+                        const opt = document.createElement("option");
+                        opt.value = kota;
+                        opt.textContent = kota;
+                        kotaSelect.appendChild(opt);
+                    });
+                }
+            });
+
+            cariButton.addEventListener("click", function (e) {
+                e.preventDefault(); //mencegah reload setelah form di submit
+
+                const prov = provinsiSelect.value;
+                const kota = kotaSelect.value;
+                const kode = cariInput.value.trim(); // trim digunakan untuk menghapus spasi depan&belakang
+
+                if (!prov || !kota || !kode) {
+                    hasilDiv.innerHTML = "<p style='color:red;'>Lengkapi Provinsi, Kota/Kabupaten, dan Kode Pos!</p>";
+                    return;
+                }
+
+                const hasil = dataKodePos.filter(item => 
+                item.kodePos === kode && 
+                item.kota === kota && 
+                item.provinsi === prov
+            );
+
+                if (hasil.length > 0) {
+                    let output = `<p><strong>Ditemukan ${hasil.length} data</strong> untuk kode pos <strong>${kode}</strong>:</p>`;
+                    hasil.forEach(item => {
+                        output += `
+                            <div class="result-box">
+                                <div class="result-header">Kelurahan: ${item.kelurahan}</div>
+                                <div class="result-body">
+                                Kode pos <b>${item.kodePos}</b> untuk kelurahan <b>${item.kelurahan}</b>, 
+                                Kecamatan <b>${item.kecamatan}</b>.
+                                </div>
+                            </div>
+                        `;
+                    });
+                    hasilDiv.innerHTML = output;
+                    } else {
+                        hasilDiv.innerHTML = "<p style='color:red;'>Data kode pos tidak ditemukan!</p>";
+                    }
+                });
+        </script>
+    </body>
+</html>

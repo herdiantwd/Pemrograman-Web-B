@@ -13,11 +13,16 @@ Source Code : [SOURCE](no1.html)
 
 <br>
 
-> 2
+> 2. Membuat pencarian kode pos Indonesa
+
+<img width="1917" height="969" alt="image" src="https://github.com/user-attachments/assets/d536cdc1-5dbd-438c-aa2d-c26ff2969994" />
+
+Source Code : [SOURCE](no2.html)
+
 
 <br>
 
-> 3 Membuat List Dropdown Dinamis
+> 3. Membuat List Dropdown Dinamis
 
 <img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/6904239a-a56c-41bf-b4fc-764f6e631783" />
 

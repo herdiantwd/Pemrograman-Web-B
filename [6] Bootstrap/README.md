@@ -1,4 +1,4 @@
-# Bootstrap Basic Practive
+# Bootstrap Basic Practice
 
 Pada pertemuan ke-6 kali ini, diberikan sebuah pengenalan framework untuk CSS menggunakan **Bootstrap**. Untuk pengenalan secara praktek, diberikan latihan untuk
 mengetahui beberapa fungsi-fungsi yang dapat digunakan pada Bootstrap ini.

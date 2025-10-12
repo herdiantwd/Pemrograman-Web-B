@@ -4,7 +4,6 @@ Pada pertemuan 7 ini diberikan sebuah materi tentang AJAX (Asynchronous JavaScri
 
 Latihan :
 
-
-
+(video/Screen Recording 2025-10-13 061624.mp4)
 
 

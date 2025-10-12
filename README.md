@@ -19,6 +19,6 @@ Herdian Tri Wardhana<br>
 
 [6. Bootstrap](/[6]%20Bootstrap)
 
-[6. AJAX](/[7]%20AJAX)
+[7. AJAX](/[7]%20AJAX)
 
 </h3>

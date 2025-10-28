@@ -22,7 +22,7 @@ Pada pertemuan kali ini, diberikan contoh implementasi dari `PHP` dan `SQL` deng
 <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/4ca856c1-c3ed-42a0-b156-441d71cd76b1" />
 <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/482b5195-8755-44f6-bd1f-c6814c982cd5" />
 
-### [Resource](Pemrograman-Web-B/[9]%20PHP/src)
+### [Resource](/src/config.php)
 
 
 

@@ -21,4 +21,8 @@ Herdian Tri Wardhana<br>
 
 [7. AJAX](/[7]%20AJAX)
 
+[8. ETS](https://github.com/herdiantwd/PWEB-ETS)
+
+[9. PHP]([9]%20PHP)
+
 </h3>

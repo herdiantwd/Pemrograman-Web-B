@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card img {
+    height: 300px;
+    object-fit:contain;
+}
+
+.rating {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+/* Card container */
+.movie-card {
+    display: inline-block;
+    background: #111;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform .2s, box-shadow .3s;
+}
+
+/* Hover efek */
+.movie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Wrapper untuk contain */
+.poster-wrapper {
+    width: 100%;
+    height: 320px; /* tinggi tetap agar grid rapih */
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Poster contain */
+.movie-poster {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 16px 16px 0 0; /* sudut membulat atas saja */
+}
+
+/* Panel info hitam */
+.movie-info {
+    padding: 14px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+/* Judul */
+.movie-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+}
+
+/* Tombol */
+.movie-btn {
+    border-radius: 10px;
+    font-weight: 500;
+}
+.movie-btn:hover {
+    background: white;
+    color: black !important;
+}
+
+.putih{
+    color:white;
+}

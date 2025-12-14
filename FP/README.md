@@ -145,6 +145,6 @@ Berikut adalah alur data dan arsitektur sistem proyek ini:
 
 | Nama     | NRP | Tugas                             |
 | ------------ | ----------------------------------------------- |----------------------------------------------- |
-| Herdian Tri Wardhana   | 502524229 | Frontend, Database, Testing, dan Diagram Kerja  |
+| Herdian Tri Wardhana   | 5025241229 | Frontend, Database, Testing, dan Diagram Kerja  |
 | Aminnudin Wijaya    |5025241242| Backend, API, dan Deploy            |
 

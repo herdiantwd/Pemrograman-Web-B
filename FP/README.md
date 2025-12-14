@@ -60,19 +60,46 @@ Sistem mengintegrasikan **The Movie Database (TMDB) API** untuk mengisi konten f
 
 ### D. Pengujian (Testing)
 
-Pengujian dilakukan secara manual (Black Box Testing) pada fitur-fitur utama:
 1.  **Registrasi & Login:**
     -   Mencoba mendaftar dengan email valid.
+        <img width="1913" height="873" alt="image" src="https://github.com/user-attachments/assets/bcaf3cd1-2914-4ec8-8f04-42937dc23a68" /> <br>
+        User : Pora T <br>
+        Email : porat@gmail.com <br>
+        Pass : porat123 <br>
+        
     -   Login dengan kredensial salah (harus gagal).
+        <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/39afa4d3-763e-4717-853f-42b2aac6aa30" /> <br>
+        Ketika salah password maupun user <br>
+        
     -   Login dengan kredensial benar (berhasil masuk ke `index.php`).
+        <img width="1918" height="875" alt="image" src="https://github.com/user-attachments/assets/5e4d5bf0-c61a-40bf-9f0f-159db06c61ad" /> <br>
+        Langsung menuju halaman index
+        
 2.  **Browsing Film:**
     -   Membuka halaman utama, memastikan gambar dan judul muncul.
+        <img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/0001cff2-4427-484a-8230-54d545d127c8" />
+ 
     -   Memastikan data diambil dari API jika database kosong.
+        <img width="1919" height="342" alt="image" src="https://github.com/user-attachments/assets/89409634-c34d-4cbe-bd6c-44fe612dbeb5" />
+
+        <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/58a1f597-44ad-4bd7-9f23-963bc94961a2" />
+
+
 3.  **Search:**
     -   Menggunakan fitur pencarian di `search.php` dengan kata kunci tertentu.
+        <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/05bf0958-0358-48cd-9183-5b41ba7617bb" />
+
 4.  **Rating & Review:**
     -   Mencoba memberi rating saat belum login (harus diarahkan ke login).
+        <img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/f7cbd7db-bdf2-4589-a73a-a01b798cabde" />
+  
     -   Memberi rating dan review saat sudah login, lalu memastikan ulasan muncul di halaman detail.
+        <img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/61307380-0f2f-4392-a7cf-95ea536b4a73" />
+
+        Saat logout, non-login :
+
+        <img width="1919" height="883" alt="image" src="https://github.com/user-attachments/assets/a07d3bbd-fe81-41ff-8587-fd6c36eaff18" />
+
 
 ---
 

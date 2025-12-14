@@ -112,3 +112,12 @@ Berikut adalah alur data dan arsitektur sistem proyek ini:
 5.  **Mencari Film:**
     -   Klik menu **Search** di navigasi.
     -   Ketik judul film yang ingin dicari pada kolom pencarian dan tekan Enter.
+  
+## Jobdesk
+
+
+| Nama     | NRP | Tugas                             |
+| ------------ | ----------------------------------------------- |----------------------------------------------- |
+| Herdian Tri Wardhana   | 502524229 | Frontend, Database, Testing, dan Diagram Kerja  |
+| Aminnudin Wijaya    |5025241242| Backend, API, dan Deploy            |
+
